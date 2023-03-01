@@ -1,8 +1,0 @@
-- name: Instalando VIM e NEOVIM
-  apt:
-    name: "{{ item }}"
-    state: present
-    validate_certs: true
-  loop:
-  - vim
-  - neovim

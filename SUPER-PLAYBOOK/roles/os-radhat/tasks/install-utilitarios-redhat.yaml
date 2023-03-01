@@ -1,9 +1,0 @@
----
-- name: INSTALANDO UTILITARIO  
-  yum:
-    name: "{{ item }}" 
-    state: present
-    update_cache: true
-    validate_certs: true
-  loop:
-    - "{{ UTILITARIOS_VARS }}"

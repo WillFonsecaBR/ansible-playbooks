@@ -1,8 +1,0 @@
----
-- name: Instalando Terminais Linux
-  yum:
-    name: "{{ item }}"
-    state: present
-    update_cache: true
-    validate_certs: true
-  loop: "{{ TERMINAIS_LINUX_VAR }}"

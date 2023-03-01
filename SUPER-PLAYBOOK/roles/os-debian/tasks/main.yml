@@ -1,7 +1,0 @@
-- name: INSTALAÇÃO DO SNAPD GERENCIADOR DE PACOTES
-  import_tasks: base-debian/install-snap-debian.yaml
-  when: ansible_facts['os_family'] == "Debian"
-
-- name: INSTALAÇÃO DOS EDITORES DE TEXTO VIM E NEOVIM
-  import_tasks: base-debian/install-vim-debian.yaml
-  when: ansible_facts['os_family'] == "Debian"
