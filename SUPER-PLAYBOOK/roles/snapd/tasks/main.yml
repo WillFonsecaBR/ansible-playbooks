@@ -1,0 +1,7 @@
+---
+- name: INSTALL SOFTWWARE VIA SNAPD
+  snap:
+    name: "{{ item }}"
+    classic: true
+    state: present
+  loop: "{{ SNAP_SOFTWARES_VAR }}"

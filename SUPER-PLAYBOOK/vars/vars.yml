@@ -1,0 +1,39 @@
+---
+## VARS USERS
+MY_USER_VAR: will
+MY_DOWNLOAD_PATH_VAR: "/home/{{ MY_USER_VAR }}/Downloads"
+
+## VARS GIT
+GIT_USER_NAME_VAR: "Willian Fonseca"
+GIT_USER_EMAIL_VAR: "willian.alves2109@gmail.com"
+
+
+## VARS SNAP
+SNAP_SOFTWARES_VAR:
+  - code
+  - eclipse
+  - notepadqq
+  - intellij-idea-community
+  - pycharm-community
+  - postman
+  - drawio
+  - anki-ppd
+  - pomatez
+  - obs-studio
+
+
+# VARS SOFTWARES
+TERMINAIS_LINUX_VAR:
+  - terminator
+  - konsole
+  - terminology
+  - tilix
+  - yakuake
+  - alacritt
+
+GOOGLE_CHROME_RPM_VAR: google-chrome-stable_current_x86_64.rpm
+
+## VARS UTILITARIOS / PERFUMARIA
+UTILITARIOS_VARS: 
+  - cmatrix
+  - tree

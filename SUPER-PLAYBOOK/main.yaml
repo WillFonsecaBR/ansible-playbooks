@@ -1,0 +1,10 @@
+---
+- name: SUPER PLAYBOOK DE INSTALAÇÃO LINUX - OS DEBIAN E RADHAT
+  hosts: all
+  become: true
+  roles:
+  # - os-debian
+  - os-radhat
+  # - snapd
+  vars_files:
+  - vars/vars.yml

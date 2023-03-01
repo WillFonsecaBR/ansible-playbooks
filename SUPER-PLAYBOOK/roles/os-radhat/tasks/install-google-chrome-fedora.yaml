@@ -1,0 +1,32 @@
+---
+# - name: VERIFICANDO INSTALAÇÃO DO GOOGLE CHROME
+
+
+# - name: TRANSFERINDO PACOTE RPM PARA A MAQUINA
+#   copy: 
+#     src: "files/{{ GOOGLE_CHROME_RPM_VAR }}"
+#     dest: "{{ MY_DOWNLOAD_PATH_VAR }}"
+
+
+# - name: INSTALANDO GOOGLE CHROME
+#   dnf:
+#     name: "{{ GOOGLE_CHROME_RPM_VAR }}"
+#     state: present
+#     validate_certs: true
+#     update_cache: true
+
+
+# - name: EXCLUINDO ARQUIVO RPM
+#   file:
+#     path: "{{ GOOGLE_CHROME_RPM_VAR }}/{{ GOOGLE_CHROME_RPM_VAR }}"
+#     state: absent
+
+
+- name: INSTALANDO GOOGLE CHROME - FEDORA 37
+  shell:
+    cmd: "{{ item }}"
+  loop:
+    - sudo dnf install -y fedora-workstation-repositories
+    - sudo dnf install -y fedora-workstation-repositories
+    - sudo dnf config-manager --set-enabled google-chrome
+    - sudo dnf install -y google-chrome-stable

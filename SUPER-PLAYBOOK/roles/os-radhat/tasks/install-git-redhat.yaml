@@ -1,0 +1,18 @@
+- name: INSTALAÇÃO E CONFIGURAÇÃO DO GIT
+  yum:
+    name: git
+    state: present
+    update_cache: true
+    validate_certs: true
+
+
+- name: CONFIURANDO USUARIO E E-MAL GIT
+  shell: "{{ item }}"
+  loop:
+  - git config --global user.name "{{ GIT_USER_NAME_VAR }}"
+  - git config --global user.email "{{ GIT_USER_EMAIL_VAR }}"
+
+
+- name: DEFININDO A BRANCH MAIN COMO PADRÃO
+  shell:
+    cmd: git config --global init.defaultBranch "main"

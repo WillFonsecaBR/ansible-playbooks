@@ -1,0 +1,9 @@
+- name: INSTALANDO VIM EDITOR - DEBIAN OS FAMILY
+  apt:
+    name: vim
+    state: present
+    update_cache: true
+    install_recommends: true
+    validate_certs: yes
+
+

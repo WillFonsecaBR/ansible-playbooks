@@ -1,0 +1,9 @@
+- name: Instalando VIM e NEOVIM
+  yum:
+    name: "{{ item }}"
+    state: present
+    validate_certs: true
+  loop:
+  - vim
+  - neovim
+  - python3-neovim
