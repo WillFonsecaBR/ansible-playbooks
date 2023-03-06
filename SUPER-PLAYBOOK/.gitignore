@@ -1,6 +1,6 @@
 *-facts.json
 instructs.txt
-ansible.cfg
-hosts
+*.cfg
+./hosts
 ansible-facts.json
 *.txt
