@@ -5,6 +5,6 @@
   roles:
   # - os-debian
   - os-radhat
-  # - snapd
+  - snapd
   vars_files:
   - vars/vars.yml

@@ -1,26 +1,26 @@
----
-- name: INSTALANDO E CONFIGURANDO GIT - REDHAT OS FAMILY
-  import_tasks: install-git-redhat.yaml
-  when: ansible_facts['os_family'] == "RedHat"
+# ---
+# - name: INSTALANDO E CONFIGURANDO GIT - REDHAT OS FAMILY
+#   import_tasks: install-git-redhat.yaml
+#   when: ansible_facts['os_family'] == "RedHat"
 
 
 # - name: INSTALANDO SNAP - REDHAT OS FAMILY
-#   import_tasks: install-snap-radhat.yaml
+#   import_tasks: install-snap-redhat.yaml
 #   when: ansible_facts['os_family'] == "RedHat"
 
 
-# - name: INSTALANDO GOOGLE CHROME - FEDORA 37
-#   import_tasks: install-google-chrome-fedora.yaml
-#   when: ansible_facts['os_family'] == "RedHat"
+# # - name: INSTALANDO GOOGLE CHROME - FEDORA 37
+# #   import_tasks: install-google-chrome-fedora.yaml
+# #   when: ansible_facts['os_family'] == "RedHat"
 
 
 # - name: INSTALANDO EDITOR DE TEXTO VIM E NEOVIM - REDHAT OS FAMILY
-#   import_tasks: install-vim-radhat.yaml
+#   import_tasks: install-vim-redhat.yaml
 #   when: ansible_facts['os_family'] == "RedHat"
 
 
 # - name: INSTALANDO TERMINAIS LINUX - REDHAT OS FAMILY
-#   import_tasks: install-terminais-radhat.yaml
+#   import_tasks: install-terminais-redhat.yaml
 #   when: ansible_facts['os_family'] == "RedHat"
 
 
@@ -29,6 +29,6 @@
 #   when: ansible_facts['distribution'] == "Fedora" and ansible_facts['distribution_version'] == "37" 
 
 
-# - name: INSTALANDO UTILITARIOS - REDHAT OS FAMILY
-#   import_tasks: install-utilitarios-redhat.yaml
-#   when: ansible_facts['os_family'] == "RedHat"
+- name: INSTALANDO UTILITARIOS - REDHAT OS FAMILY
+  import_tasks: install-utilitarios-redhat.yaml
+  when: ansible_facts['os_family'] == "RedHat"

@@ -22,14 +22,14 @@
 - name: MOVENDO ARQUIVO DE SCRIPT DO REPO RPM
   copy:
     src: files/virtualbox-fedora-37.sh
-    dest: /home/will/Downloads
+    dest: /home/willian/Downloads
     owner: "{{ MY_USER_VAR }}"
     mode: 0755
 
 
 - name: EXECUTANDO SCRIPT DO REPO RPM
   shell:
-    cmd: bash /home/will/Downloads/virtualbox-fedora-37.sh
+    cmd: bash /home/willian/Downloads/virtualbox-fedora-37.sh
 
 
 - name: BUSCANDO REPOSITORIO
@@ -64,5 +64,5 @@
 
 - name: REMOVENDO SCRIPT VIRTUALBOX-FEDORA-37
   file:
-    path: /home/will/Downloads/virtualbox-fedora-37.sh
+    path: /home/willian/Downloads/virtualbox-fedora-37.sh
     state: absent
